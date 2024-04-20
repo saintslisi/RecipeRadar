@@ -1,5 +1,5 @@
 const express = require('express');
-const stripe = require('stripe')('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');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const app = express();
 const port = 3000;
 
@@ -8,7 +8,7 @@ app.use(express.json());
 app.post('/submit-payment', async (req, res) => {
     const { cardNumber, expiry, cvc, cardholderName } = req.body;
 
-    
+
     try {
         const paymentIntent = await stripe.paymentIntents.create({
             amount: 1000, // Importo in centesimi (es. $10.00)
