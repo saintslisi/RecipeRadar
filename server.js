@@ -8,6 +8,7 @@ app.use(express.json());
 app.post('/submit-payment', async (req, res) => {
     const { cardNumber, expiry, cvc, cardholderName } = req.body;
 
+    
     try {
         const paymentIntent = await stripe.paymentIntents.create({
             amount: 1000, // Importo in centesimi (es. $10.00)
