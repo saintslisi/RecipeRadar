@@ -1,5 +1,5 @@
 const express = require('express');
-const stripe = require('stripe')('YOUR_STRIPE_SECRET_KEY');
+const stripe = require('stripe')('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');
 const app = express();
 const port = 3000;
 
