@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     form.addEventListener('test-button', function(event) {
         // Evita il comportamento predefinito di sottomissione del modulo
         event.preventDefault();
-
+        console.log("OK");
         // Ottieni i dati del modulo
         var formData = {
             card: {
