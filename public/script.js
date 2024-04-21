@@ -47,3 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+document.getElementById('test-button').addEventListener('click', function () {
+    console.log("OK");
+});
