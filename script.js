@@ -18,12 +18,13 @@ app.post('/submit-payment', async (req, res) => {
             capture_method: 'automatic',
             payment_method_data: {
                 type: 'card',
-                card: {
+                card: 'pm_card_visa'
+                /*{
                     number: cardNumber,
                     exp_month: expiry.split('/')[0],
                     exp_year: expiry.split('/')[1],
                     cvc: cvc
-                }
+                }*/
             }
         });
 
