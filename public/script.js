@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var form = document.getElementById('payment-form');
 
     // Aggiungi un ascoltatore di eventi per la sottomissione del modulo
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('test-button', function(event) {
         // Evita il comportamento predefinito di sottomissione del modulo
         event.preventDefault();
 
@@ -47,6 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-document.getElementById('test-button').addEventListener('click', function () {
+/*document.getElementById('test-button').addEventListener('click', function () {
     console.log("OK");
-});
+});*/
