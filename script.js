@@ -1,5 +1,6 @@
 const express = require('express');
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+//const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')("sk_test_51P7cAmAwzptSPu4ntZWcCiwLsGN6PtCIJVGMSzLPpvdfoSbs9bSP8Gu1iNNrkPRxN8OXWDDuJupLGWeuAVquvvif008oF7aTbb");
 const app = express();
 const port = 3000;
 
