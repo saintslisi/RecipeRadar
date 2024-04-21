@@ -16,7 +16,8 @@ app.post('/submit-payment', async (req, res) => {
             currency: 'usd',
             payment_method_types: ['card'],
             capture_method: 'automatic',
-            payment_method_data: {
+            payment_method:"pm_card_visa", 
+            /*payment_method_data: {
                 type: 'card',
                 card: 'pm_card_visa'
                 /*{
@@ -24,8 +25,8 @@ app.post('/submit-payment', async (req, res) => {
                     exp_month: expiry.split('/')[0],
                     exp_year: expiry.split('/')[1],
                     cvc: cvc
-                }*/
-            }
+                }
+            }*/
         });
 
         res.json({ success: true, paymentIntent });
